@@ -10,7 +10,8 @@ layout: compress
     {% include head.html %}
     <style type="text/css">
     {% capture include_to_scssify %}
-    {% include main.scss %}
+    {% include scss/main.scss %}
+    {% include scss/nav.scss %}
     {% endcapture %}
     {{ include_to_scssify | scssify }}
     </style>
